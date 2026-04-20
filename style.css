@@ -55,7 +55,16 @@ body {
   color: #00ffae;
   margin-bottom: 25px;
 }
-
+/* Estilo do Contexto Brasileiro */
+.contexto-brasileiro {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  text-align: justify; /* Texto alinhado para parecer artigo formativo */
+  line-height: 1.8;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
 .contexto-brasileiro {
   text-align: justify;
   line-height: 1.7;
