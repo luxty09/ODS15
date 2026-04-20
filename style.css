@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  /* Fundo Dinâmico com Imagem conforme pedido pelo professor */
+  background: linear-gradient(rgba(11, 61, 46, 0.9), rgba(11, 61, 46, 0.9)), 
+              url('https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+/* HERO */
+.hero {
+  height: 60vh;
+  background-image: url('https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 3.5rem;
+  color: #00ffae;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.intro h2 {
+  color: #00ffae;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* CARDS GRID */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 255, 174, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #00ffae;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 20px 20px 10px;
+  color: #00ffae;
+}
+
+.card p {
+  padding: 0 20px 20px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+.donate {
+  display: block;
+  margin: 0 20px 20px;
+  padding: 12px;
+  text-align: center;
+  border-radius: 30px;
+  background: transparent;
+  border: 2px solid #00ffae;
+  color: #00ffae;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.donate:hover {
+  background: #00ffae;
+  color: #06291f;
+}
+
+/* FOOTER - ESTILO G1 / FORMATIVO */
+footer {
+  background: #06291f;
+  border-top: 3px solid #00ffae;
+  padding: 50px 20px 20px;
+  margin-top: 50px;
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  text-align: left;
+}
+
+.footer-grid h3 {
+  color: #00ffae;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.footer-team ul {
+  list-style: none;
+}
+
+.footer-team li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footer-info p, .footer-support p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .overlay h1 { font-size: 2.2rem; }
+  .hero { height: 40vh; }
+  .footer-grid { text-align: center; }
+}
